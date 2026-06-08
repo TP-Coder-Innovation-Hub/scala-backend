@@ -41,7 +41,17 @@ def getUser(id: Int): IO[AppError, User]
 
 `IO[AppError, User]` is a **value that describes a computation**. It does not run. It is a blueprint. A recipe. The type tells you:
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — effect system IO as blueprint description separate from execution
+```mermaid
+graph LR
+    subgraph "Without Effects"
+        W1["val result = readFile()"] --> W2["Executes IMMEDIATELY\nSide effect happens NOW"]
+    end
+    subgraph "With Effects"
+        E1["val program = IO(readFile)"] --> E2["Just a DESCRIPTION\nNothing runs yet"]
+        E2 --> E3["program.unsafeRunSync()"]
+        E3 --> E4["NOW it executes"]
+    end
+```
 
 - This computation produces a `User`
 - It may fail with an `AppError`
@@ -64,7 +74,19 @@ Each step is a value. The for-comprehension combines them into one value. Nothin
 
 A function is referentially transparent if you can replace its call with its result without changing program behavior.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — referential transparency function call replaceable with result value
+```mermaid
+graph TD
+    subgraph "Referentially Transparent"
+        RT1["val x = pureFunc(2)\nval y = x + x"]
+        RT2["val y = pureFunc(2) + pureFunc(2)"]
+        RT1 ===|"same result"| RT2
+    end
+    subgraph "NOT Referentially Transparent"
+        NT1["val x = println('hi')\nval y = (x, x)"]
+        NT2["val y = (println('hi'), println('hi'))"]
+        NT1 -.-|"prints ONCE vs TWICE"| NT2
+    end
+```
 
 ```scala
 // Referentially transparent

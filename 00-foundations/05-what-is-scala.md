@@ -36,7 +36,16 @@ def handle(status: PaymentStatus): String = status match
   // If you forget a case, the compiler warns you
 ```
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Scala ADT sealed trait pattern matching exhaustiveness compiler check
+```mermaid
+graph TD
+    ST["sealed trait Shape"] --> C["case class Circle(r: Double)"]
+    ST --> S["case class Square(side: Double)"]
+    ST --> T["case class Triangle(base: Double, h: Double)"]
+    
+    PM["match shape {<br/>  case Circle => ...<br/>  case Square => ...<br/>  // missing Triangle?"<br/>}"]
+    
+    PM -->|"compiler warns"| WARN["Warning: match not exhaustive!"]
+```
 
 ## Scala 2 vs Scala 3
 

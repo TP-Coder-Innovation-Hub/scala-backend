@@ -2,7 +2,16 @@
 
 You can build backend services in many languages. Here is why Scala deserves your attention, and when it is the wrong choice.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Scala backend vs Java Kotlin Go type safety expressiveness
+```mermaid
+graph LR
+    subgraph "Type Safety vs Expressiveness"
+        GO["Go\nSimple types\nLow expressiveness"]
+        KT["Kotlin\nNull-safe\nMedium expressiveness"]
+        JA["Java\nVerbose\nMedium expressiveness"]
+        SC["Scala\nAdvanced types\nHigh expressiveness"]
+    end
+    GO --> KT --> JA --> SC
+```
 
 ## Scala vs Java
 

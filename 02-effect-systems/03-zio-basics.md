@@ -25,7 +25,12 @@ def getUser(id: Int): ZIO[Database, UserError, User]
 
 ZIO's type is more informative. You can read the signature and know: what it needs, how it fails, what it produces.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — ZIO type signature R environment E error A success three channels
+```mermaid
+graph LR
+    Z["ZIO[R, E, A]"] --> R1["R: Environment needed\n(e.g., Database, Config)"]
+    Z --> E1["E: Error type\n(e.g., IOException)"]
+    Z --> A1["A: Success type\n(e.g., User)"]
+```
 
 ## Basic Operations
 
@@ -107,7 +112,13 @@ val app = getUser(1).provide(fullLayer)
 
 Layers compose with `>>>` (pipe — output of one feeds into next) and `++` (horizontal — combine independent layers).
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — ZLayer dependency composition piping horizontal combine diagram
+```mermaid
+flowchart LR
+    L1["ZLayer[Database]"] -->|"to"| L2["ZLayer[Database, UserRepository]"]
+    L3["ZLayer[HttpClient]"] -->|"to"| L4["ZLayer[HttpClient, ApiService]"]
+    L2 -->|"combine"| L5["ZLayer[Database + HttpClient\nUserRepository + ApiService]"]
+    L4 -->|"combine"| L5
+```
 
 ## Cats Effect vs ZIO — When to Choose
 

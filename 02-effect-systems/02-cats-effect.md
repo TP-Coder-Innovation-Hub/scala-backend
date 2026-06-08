@@ -52,7 +52,17 @@ val program: IO[Unit] =
 
 for-comprehensions are syntactic sugar for `flatMap`/`map`. They make sequential IO readable:
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Cats Effect IO for-comprehension composition resource management
+```mermaid
+flowchart LR
+    IO1["IO(fetchUrl)"] --> |"flatMap"| IO2["IO(parseJSON)"]
+    IO2 --> |"flatMap"| IO3["IO(saveToDB)"]
+    IO3 --> RES["Resource.make(open)\n.ensure(close)"]
+    
+    NOTE["for {
+      conn <- Resource.make(IO(open))(_.close)
+      result <- IO(query(conn))
+    } yield result"]
+```
 
 ```scala
 val program: IO[Unit] = for

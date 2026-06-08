@@ -6,7 +6,21 @@ Fibers are lightweight threads — green threads managed by the runtime, not the
 
 An OS thread costs ~1MB of stack memory. 10,000 threads = 10GB of RAM. A fiber costs ~a few KB. 1,000,000 fibers is feasible.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — fibers vs OS threads memory lightweight green threads scheduling
+```mermaid
+graph LR
+    subgraph "OS Threads"
+        T1["Thread 1\n~1MB stack"]
+        T2["Thread 2\n~1MB stack"]
+        T3["Thread 3\n~1MB stack"]
+    end
+    subgraph "Fibers (Green Threads)"
+        F1["Fiber 1\n~few KB"]
+        F2["Fiber 2\n~few KB"]
+        F3["Fiber 3\n~few KB"]
+        F4["...100K more"]
+    end
+    F1 & F2 & F3 --> S["Scheduled on\nOS Threads"]
+```
 
 More importantly, fibers are managed by the effect runtime (Cats Effect or ZIO), which schedules them efficiently on a small pool of OS threads (typically matching your CPU cores).
 

@@ -8,7 +8,14 @@ fs2 (Functional Streams for Scala) provides pure functional streaming. Streams a
 
 A stream has three parts:
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — fs2 streaming source pipe sink backpressure pipeline
+```mermaid
+flowchart LR
+    SRC["Source\n(fs2.Stream)\nemit elements"] --> P1["Pipe: filter"]
+    P1 --> P2["Pipe: map"]
+    P2 --> P3["Pipe: groupBy"]
+    P3 --> SNK["Sink\nconsume elements"]
+    SNK -->|"backpressure"| SRC
+```
 
 1. **Source** — Produces values (read file, listen to socket, generate sequence)
 2. **Pipe** — Transforms values (filter, map, batch, parse)
@@ -106,7 +113,18 @@ Step by step:
 
 Backpressure is automatic. If the consumer is slower than the producer, the producer is slowed down. No unbounded buffering. No out-of-memory crashes.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — fs2 backpressure automatic producer consumer flow control
+```mermaid
+sequenceDiagram
+    participant P as Producer (fast)
+    participant B as Buffer
+    participant C as Consumer (slow)
+    P->>B: emit 1
+    P->>B: emit 2
+    B->>C: process 1
+    Note over P: Waits when buffer full
+    C-->>B: ready for next
+    B->>C: process 2
+```
 
 ```scala
 // Fast producer (every 10ms) → slow consumer (every 100ms)

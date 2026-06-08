@@ -2,7 +2,16 @@
 
 Fibers fail. Network calls timeout. Database connections drop. Supervision is how you manage fiber lifecycles — what happens when things go wrong, and how to clean up.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — fiber supervision structured concurrency all or nothing cancellation
+```mermaid
+graph TD
+    ROOT["Root Fiber"] --> F1["Fiber A\n(fetch users)"]
+    ROOT --> F2["Fiber B\n(fetch orders)"]
+    ROOT --> F3["Fiber C\n(fetch stats)"]
+    F2 -->|"fails"| ROOT
+    ROOT -.->|"cancel all"| F1
+    ROOT -.->|"cancel all"| F3
+    Note["Structured concurrency:\nparent waits for ALL children\nor cancels ALL on failure"]
+```
 
 ## The Problem
 
