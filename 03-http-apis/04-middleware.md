@@ -1,4 +1,4 @@
-# Middleware `[Mid]`
+# Middleware ``
 
 Middleware wraps routes to add cross-cutting concerns: authentication, logging, CORS, error handling. In functional Scala, middleware is function composition — a function that takes a route and returns a new route with added behavior.
 

@@ -1,4 +1,4 @@
-# Compiler vs Interpreter `[Entry]`
+# Compiler vs Interpreter ``
 
 Programs are written in human-readable text. Machines execute binary instructions. Something must translate between the two. That something is either a compiler or an interpreter.
 

@@ -1,4 +1,4 @@
-# Database Migrations `[Mid]`
+# Database Migrations ``
 
 Databases evolve. New tables, new columns, changed constraints. Migrations track these changes as versioned, repeatable scripts. Never modify a database schema manually. Always use migrations.
 

@@ -1,4 +1,4 @@
-# Implicits and Givens `[Mid]`
+# Implicits and Givens ``
 
 Implicits (Scala 2) and given/using (Scala 3) are Scala's mechanism for type-class pattern and dependency injection. They are the plumbing behind Cats, http4s, circe, and most of the Scala ecosystem.
 

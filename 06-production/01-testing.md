@@ -1,4 +1,4 @@
-# Testing `[Mid]`
+# Testing ``
 
 Testing functional Scala is different from testing imperative code. Pure functions are trivially testable. Effectful code is tested by asserting on IO values. No mocking framework needed — just pass different inputs.
 

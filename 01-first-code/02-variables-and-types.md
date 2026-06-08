@@ -1,4 +1,4 @@
-# Variables and Types `[Entry]`
+# Variables and Types ``
 
 Scala has two kinds of variables: `val` (immutable) and `var` (mutable). Use `val` by default. Every variable has a type, but you often don't need to write it — the compiler figures it out.
 

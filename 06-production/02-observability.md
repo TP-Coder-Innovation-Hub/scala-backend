@@ -1,4 +1,4 @@
-# Observability `[Senior]`
+# Observability ``
 
 You cannot operate what you cannot see. Observability is logging, metrics, and tracing — the three pillars that tell you what your service is doing in production.
 

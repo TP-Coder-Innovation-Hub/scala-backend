@@ -1,4 +1,4 @@
-# Streaming with fs2 `[Mid]`
+# Streaming with fs2 ``
 
 Not all data fits in memory. Log files, database result sets, HTTP request bodies, real-time events — these are streams. Processing them as in-memory lists will exhaust your heap.
 
@@ -7,6 +7,8 @@ fs2 (Functional Streams for Scala) provides pure functional streaming. Streams a
 ## Core Concepts
 
 A stream has three parts:
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — fs2 streaming source pipe sink backpressure pipeline
 
 1. **Source** — Produces values (read file, listen to socket, generate sequence)
 2. **Pipe** — Transforms values (filter, map, batch, parse)
@@ -103,6 +105,8 @@ Step by step:
 ## Backpressure
 
 Backpressure is automatic. If the consumer is slower than the producer, the producer is slowed down. No unbounded buffering. No out-of-memory crashes.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — fs2 backpressure automatic producer consumer flow control
 
 ```scala
 // Fast producer (every 10ms) → slow consumer (every 100ms)

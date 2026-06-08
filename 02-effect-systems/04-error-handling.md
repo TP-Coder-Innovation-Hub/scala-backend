@@ -1,4 +1,4 @@
-# Error Handling `[Mid]`
+# Error Handling ``
 
 Exceptions are unchecked in Scala (and Java). The compiler does not track them. You don't know a method throws until it crashes at runtime. In a backend service, this means unhandled errors become 500 responses.
 

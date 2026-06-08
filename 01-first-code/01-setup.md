@@ -1,4 +1,4 @@
-# Setup `[Entry]`
+# Setup ``
 
 Get your machine ready to write and run Scala. Three things: JDK, build tool, editor.
 

@@ -1,4 +1,4 @@
-# Slick — Functional-Relational Mapping `[Mid]`
+# Slick — Functional-Relational Mapping ``
 
 Slick is a database library that provides a type-safe, LINQ-like query DSL. Instead of writing SQL strings, you write Scala code that the compiler type-checks, then Slick translates to SQL.
 

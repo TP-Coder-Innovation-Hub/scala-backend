@@ -1,4 +1,4 @@
-# Programming Paradigms `[Entry]`
+# Programming Paradigms ``
 
 A paradigm is a set of rules about how to structure code. The two dominant paradigms are Object-Oriented Programming (OOP) and Functional Programming (FP). Scala supports both. For backend services, FP is the primary approach.
 

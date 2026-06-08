@@ -1,4 +1,4 @@
-# Functions `[Entry]`
+# Functions ``
 
 Functions are the building blocks of functional programming. In Scala, functions are first-class citizens — they are values you can pass, store, and compose.
 

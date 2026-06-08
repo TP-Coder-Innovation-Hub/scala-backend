@@ -1,4 +1,4 @@
-# Why Effects? `[Mid]`
+# Why Effects? ``
 
 This module is the conceptual core of this roadmap. Everything before was syntax. Everything after uses what you learn here. Read carefully.
 
@@ -41,6 +41,8 @@ def getUser(id: Int): IO[AppError, User]
 
 `IO[AppError, User]` is a **value that describes a computation**. It does not run. It is a blueprint. A recipe. The type tells you:
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — effect system IO as blueprint description separate from execution
+
 - This computation produces a `User`
 - It may fail with an `AppError`
 - It performs side effects (captured in `IO`)
@@ -61,6 +63,8 @@ Each step is a value. The for-comprehension combines them into one value. Nothin
 ## Referential Transparency
 
 A function is referentially transparent if you can replace its call with its result without changing program behavior.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — referential transparency function call replaceable with result value
 
 ```scala
 // Referentially transparent

@@ -1,4 +1,4 @@
-# What Is Scala? `[Entry]`
+# What Is Scala? ``
 
 Scala was created by **Martin Odersky** at EPFL (Swiss Federal Institute of Technology) and released in **2004**. Odersky previously co-designed Java generics and wrote the reference `javac` compiler. He created Scala because he believed Java was too verbose and inflexible for the problems he wanted to solve.
 
@@ -35,6 +35,8 @@ def handle(status: PaymentStatus): String = status match
   case Failed(reason)  => s"Payment failed: $reason"
   // If you forget a case, the compiler warns you
 ```
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Scala ADT sealed trait pattern matching exhaustiveness compiler check
 
 ## Scala 2 vs Scala 3
 

@@ -57,6 +57,6 @@ By the end of this roadmap you will be able to:
 
 ## Level Badges
 
-- `[Entry]` — No prior Scala experience needed
-- `[Mid]` — Comfortable with basics, ready for real patterns
-- `[Senior]` — Production-grade thinking, architecture decisions
+- `` — No prior Scala experience needed
+- `` — Comfortable with basics, ready for real patterns
+- `` — Production-grade thinking, architecture decisions

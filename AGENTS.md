@@ -20,7 +20,7 @@ This is a **Scala backend roadmap** — educational content teaching type-safe, 
 
 - **200-500 words per file.** Short, concise, direct.
 - **Code examples must compile** against Scala 3 unless noted otherwise.
-- Use `[Entry]`, `[Mid]`, `[Senior]` level badges.
+- Use ``, ``, `` level badges.
 - No emojis in content.
 - Every file is a self-contained lesson. Files reference other files by path.
 - Use step-by-step explanations with code blocks.

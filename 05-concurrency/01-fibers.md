@@ -1,10 +1,12 @@
-# Fibers `[Mid]`
+# Fibers ``
 
 Fibers are lightweight threads — green threads managed by the runtime, not the OS. You can run hundreds of thousands of fibers concurrently without the memory and context-switching overhead of OS threads.
 
 ## Why Fibers Over Threads
 
 An OS thread costs ~1MB of stack memory. 10,000 threads = 10GB of RAM. A fiber costs ~a few KB. 1,000,000 fibers is feasible.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — fibers vs OS threads memory lightweight green threads scheduling
 
 More importantly, fibers are managed by the effect runtime (Cats Effect or ZIO), which schedules them efficiently on a small pool of OS threads (typically matching your CPU cores).
 

@@ -1,4 +1,4 @@
-# Sequential, Decision, Iteration `[Entry]`
+# Sequential, Decision, Iteration ``
 
 Every program, regardless of language or paradigm, is built from three operations: sequential execution, decision, and iteration. Master these and you can build anything.
 

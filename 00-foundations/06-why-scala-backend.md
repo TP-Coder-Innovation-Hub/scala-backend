@@ -1,6 +1,8 @@
-# Why Scala Backend? `[Entry]`
+# Why Scala Backend? ``
 
 You can build backend services in many languages. Here is why Scala deserves your attention, and when it is the wrong choice.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Scala backend vs Java Kotlin Go type safety expressiveness
 
 ## Scala vs Java
 

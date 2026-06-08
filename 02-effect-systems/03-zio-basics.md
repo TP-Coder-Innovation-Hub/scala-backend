@@ -1,4 +1,4 @@
-# ZIO Basics `[Mid]`
+# ZIO Basics ``
 
 ZIO is an alternative effect system to Cats Effect. It has a different type signature that bakes in environment and error channels, providing a more integrated experience out of the box.
 
@@ -24,6 +24,8 @@ def getUser(id: Int): ZIO[Database, UserError, User]
 ```
 
 ZIO's type is more informative. You can read the signature and know: what it needs, how it fails, what it produces.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — ZIO type signature R environment E error A success three channels
 
 ## Basic Operations
 
@@ -104,6 +106,8 @@ val app = getUser(1).provide(fullLayer)
 ```
 
 Layers compose with `>>>` (pipe — output of one feeds into next) and `++` (horizontal — combine independent layers).
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — ZLayer dependency composition piping horizontal combine diagram
 
 ## Cats Effect vs ZIO — When to Choose
 

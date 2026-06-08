@@ -1,4 +1,4 @@
-# http4s — Pure Functional HTTP `[Mid]`
+# http4s — Pure Functional HTTP ``
 
 http4s is an HTTP server and client library built on Cats Effect. Routes are functions. Middleware is function composition. Everything is a value.
 

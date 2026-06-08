@@ -1,4 +1,4 @@
-# JSON Codecs `[Mid]`
+# JSON Codecs ``
 
 Every backend service serializes and deserializes JSON. In Scala, this is done through type classes — `Encoder[A]` (convert A to JSON) and `Decoder[A]` (convert JSON to A). The compiler ensures your types match.
 

@@ -1,4 +1,4 @@
-# Doobie — Pure Functional JDBC `[Mid]`
+# Doobie — Pure Functional JDBC ``
 
 Doobie is a pure functional database library. A database interaction is a value of type `ConnectionIO[A]` — a description of a computation that interacts with the database. You compose these descriptions, then hand them to a transactor that executes them.
 

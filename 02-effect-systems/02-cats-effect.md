@@ -1,4 +1,4 @@
-# Cats Effect `[Mid]`
+# Cats Effect ``
 
 Cats Effect is the most widely used effect system in the Scala ecosystem. It provides `IO[A]` — a type that describes a side-effecting computation producing a value of type `A`.
 
@@ -51,6 +51,8 @@ val program: IO[Unit] =
 ## for-Comprehensions Over IO
 
 for-comprehensions are syntactic sugar for `flatMap`/`map`. They make sequential IO readable:
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Cats Effect IO for-comprehension composition resource management
 
 ```scala
 val program: IO[Unit] = for

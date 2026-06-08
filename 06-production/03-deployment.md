@@ -1,4 +1,4 @@
-# Deployment `[Senior]`
+# Deployment ``
 
 Scala runs on the JVM. Deployment means packaging your application into a format the target environment can run — usually a Docker container.
 

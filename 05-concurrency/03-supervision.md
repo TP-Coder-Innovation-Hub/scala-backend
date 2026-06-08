@@ -1,6 +1,8 @@
-# Supervision `[Senior]`
+# Supervision ``
 
 Fibers fail. Network calls timeout. Database connections drop. Supervision is how you manage fiber lifecycles — what happens when things go wrong, and how to clean up.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — fiber supervision structured concurrency all or nothing cancellation
 
 ## The Problem
 

@@ -1,4 +1,4 @@
-# What Is Programming? `[Entry]`
+# What Is Programming? ``
 
 A program is a recipe. It takes inputs, follows steps, and produces outputs. That's it.
 

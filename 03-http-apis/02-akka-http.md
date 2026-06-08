@@ -1,4 +1,4 @@
-# Akka HTTP `[Mid]`
+# Akka HTTP ``
 
 Akka HTTP is built on the Akka actor system. It uses a directive-based DSL for routing where you compose small building blocks (directives) into complete route trees.
 

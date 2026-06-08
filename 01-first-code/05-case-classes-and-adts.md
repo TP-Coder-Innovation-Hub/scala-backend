@@ -1,4 +1,4 @@
-# Case Classes and ADTs `[Entry]`
+# Case Classes and ADTs ``
 
 Case classes and sealed traits are the workhorse of Scala backend. Together they form Algebraic Data Types (ADTs) — the mechanism for modeling your domain so the compiler enforces correctness.
 
