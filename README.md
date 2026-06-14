@@ -33,7 +33,7 @@ By the end of this roadmap you will be able to:
 | 04 | [Database](04-database/) | Doobie, Slick, migrations |
 | 05 | [Concurrency](05-concurrency/) | Fibers, fs2 streaming, supervision |
 | 06 | [Production](06-production/) | Testing, observability, deployment |
-| 07 | [Capstone](07-capstone/) | Hands-on project (coming soon) |
+| 07 | [Workshop](07-workshop/) | Hands-on project (coming soon) |
 
 ---
 
