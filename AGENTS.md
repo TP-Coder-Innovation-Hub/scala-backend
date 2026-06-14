@@ -54,4 +54,4 @@ This module is the conceptual core of the roadmap. When editing or extending:
 - `04-database/` — Doobie, Slick, migrations
 - `05-concurrency/` — Fibers, streaming, supervision
 - `06-production/` — Testing, observability, deployment
-- `07-capstone/` — Hands-on project placeholder
+- `07-workshop/` — Hands-on project placeholder
