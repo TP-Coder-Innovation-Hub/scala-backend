@@ -1,4 +1,4 @@
-# Capstone: Campaign Performance Tracker
+# Workshop: Campaign Performance Tracker
 
 A marketing ROI platform that ingests clickstream events at scale, segments audiences, manages campaigns, and delivers real-time performance analytics — built as a 3-tier modular monolith in Scala.
 
