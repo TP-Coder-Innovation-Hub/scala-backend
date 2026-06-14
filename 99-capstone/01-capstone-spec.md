@@ -21,7 +21,7 @@ This platform addresses all four. The dual-database architecture separates write
 
 ## Learning Objectives
 
-By completing this capstone you will demonstrate:
+By completing this workshop you will demonstrate:
 
 1. **ADTs and sealed traits** for domain modeling (campaign states, consent status, event types)
 2. **Cats Effect or ZIO** for effectful composition and resource safety
