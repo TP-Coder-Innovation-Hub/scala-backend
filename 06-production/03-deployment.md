@@ -214,4 +214,4 @@ ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "/app/app.jar"]
 
 `-XX:MaxRAMPercentage=75.0` tells the JVM to use 75% of container memory for heap. The rest is for off-heap, metaspace, and native memory.
 
-Next: [Capstone](../07-capstone/README.md)
+Next: [Workshop](../07-workshop/README.md)
