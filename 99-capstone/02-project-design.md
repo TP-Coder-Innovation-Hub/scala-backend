@@ -1,4 +1,4 @@
-# Capstone Design: Campaign Performance Tracker
+# Workshop Design: Campaign Performance Tracker
 
 > Companion to [01-capstone-spec.md](./01-capstone-spec.md). Diagrams, contracts, schemas — module/package layout is yours (within ADR-001's modular-monolith boundaries).
 
